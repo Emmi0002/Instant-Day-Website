@@ -9,9 +9,13 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.13.7",
-    "tailwindcss": "^4.1.13"
+    "tailwindcss": "^4.1.13",
+    "tailwindcss-animated": "^2.0.0",
+    "tailwindcss-intersect": "^2.2.0"
   },
   "devDependencies": {
     "prettier": "3.6.2",
