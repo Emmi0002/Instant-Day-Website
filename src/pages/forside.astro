@@ -94,7 +94,9 @@ import Layout from "../layouts/Layout.astro";
           <div
             class="mr-11 ml-11 flex flex-col place-items-center gap-4 xl:w-220 xl:place-self-center xl:text-xl"
           >
-            <h2>WHY INSTANT PHOTOGRAPHY?</h2>
+            <h2 class="justify-start self-stretch text-center">
+              WHY INSTANT PHOTOGRAPHY?
+            </h2>
             <p>
               Instant photography began in the 1940s, when Edwin Land invented
               it after his daughter asked to see photos right away. Polaroid
@@ -111,41 +113,45 @@ import Layout from "../layouts/Layout.astro";
     <section class="home-info-how">
       <div>
         <div class="place-start mt-20 mr-11 ml-11">
-          <h2>HOW TO PARTICIPATE</h2>
+          <h2 class="w-80 justify-start">HOW TO PARTICIPATE</h2>
           <p class="">
             So, got an instant photo ready for the public? In order to take part
             in Instant Day:
           </p>
-          <div class="gap mt-10 flex flex-col gap-5 xl:flex-row">
-            <div>
+          <div class="mt-10 flex flex-col gap-5 xl:flex-row">
+            <div class="flex flex-col gap-5 xl:flex xl:flex-col">
               <h2>1.</h2>
               <p class="text-[12px] xl:text-lg">
                 Take a photo of your instant with your smartphone (or scan it
                 for max. quality) - the file should be between 2 - 10 MB, in
                 jpg/jpeg or webp format.
               </p>
+              <img class="place-self-center" src="" alt="1" />
             </div>
-            <div>
+            <div class="flex flex-col gap-5 xl:flex xl:flex-col">
               <h2>2.</h2>
-              <p class="text-[12px] xl:text-lg">
+              <p class="text-[12px] xl:flex-1 xl:text-lg">
                 Upload your photo and credentials on [link til din “share your
                 instants” side]
               </p>
+              <img class="place-self-center" src="" alt="2" />
             </div>
-            <div>
+            <div class="flex flex-col gap-5 xl:flex xl:flex-col">
               <h2>3.</h2>
-              <p class="text-[12px] xl:text-lg">
+              <p class="flex-1 text-[12px] xl:text-lg">
                 By joining, you agree to our [terms and conditions]. In short:
                 you must be 18+, have consent from anyone in your photo, and
                 allow us to exhibit and promote your instant.
               </p>
+              <img class="place-self-center" src="" alt="3" />
             </div>
-            <div>
+            <div class="flex flex-col gap-5 xl:flex xl:flex-col">
               <h2>4.</h2>
-              <p class="text-[12px] xl:text-lg">
+              <p class="flex-1 text-[12px] xl:text-lg">
                 You can make up to 5 submissions - go through step 1-3 for each
                 submission;-)
               </p>
+              <img class="place-self-center" src="" alt="4" />
             </div>
           </div>
         </div>
@@ -183,7 +189,71 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
     </section>
-    <section class="home-inspiration"></section>
+    <section class="home-inspiration">
+      <div class="mt-20 flex flex-col gap-25">
+        <div
+          class="h-64 w-80 content-center place-self-center rounded-2xl bg-zinc-300 xl:h-80 xl:w-[1574px]"
+        >
+          <h1
+            class="w-44 justify-start place-self-center text-center text-2xl xl:w-[852px] xl:text-5xl"
+          >
+            You can also get a lot of inspiration from the art Photography
+            scene.
+          </h1>
+        </div>
+        <div
+          class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row xl:gap-50"
+        >
+          <div class="h-64 w-96 rounded-[57px] bg-zinc-300"></div>
+          <div>
+            <p class="w-[302px] justify-start">
+              Dan Isaac Wallin is a swedish art photographer, who uses large
+              format and vintage polaroid cameras for his work. His work hangs
+              in numerous houses as posters.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row-reverse xl:gap-50"
+        >
+          <div class="h-64 w-96 rounded-[57px] bg-zinc-300"></div>
+          <div>
+            <p class="w-[302px] justify-start">
+              Maripol is a french artist/photographer/film producer. Her claim
+              to fame was in the 1980’s, where she photographed famous people
+              with a Polaroid SX-70. Her photographs are still very influential
+              in the fashion industry.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row xl:gap-50"
+        >
+          <div class="h-64 w-96 rounded-[57px] bg-zinc-300"></div>
+          <div>
+            <p class="w-[302px] justify-start">
+              Mette Kelter is a danish art photographer, who often experiments
+              with deliberate destruction of the chemical process in instant
+              photos. One of the key words here is unpredictability in the work
+              process, which leads to interesting and unique artworks
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row-reverse xl:gap-50"
+        >
+          <div class="h-64 w-96 rounded-[57px] bg-zinc-300"></div>
+          <div>
+            <p class="w-[302px] justify-start">
+              The Polaroid Collection, once assembled by the company and
+              featuring works by famous photographers, was auctioned off after
+              Polaroid’s 2008 bankruptcy. Fortunately, books like The Polaroid
+              Book by Steve Crist and Barbara Hitchcock preserve its images.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
 
   <style>
