@@ -7,17 +7,17 @@
 
 @font-face {
   font-family: "Jost-light";
-  src: url("fonts/Jost-Light.ttf") format("truetype");
+  src: url("/fonts/Jost-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Jost-regular";
-  src: url("fonts/Jost-Regular.ttf") format("truetype");
+  src: url("/fonts/Jost-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Jost-medium";
-  src: url("fonts/Jost-Medium.ttf") format("truetype");
+  src: url("/fonts/Jost-Medium.ttf") format("truetype");
 }
 
 @theme {
@@ -34,28 +34,47 @@
   --font-medium: "Jost-medium", sans-serif;
   --font-light: "Jost-light", sans-serif;
   --font-regular: "Jost-regular", sans-serif;
-
-  --Titel: "Jost-Medium", sans-serif;
-  --H1: "Jost-light", sans-serif;
-  --H2-medium: "Jost-medium", sans-serif;
-  --H2-light: "Jost-light", sans-serif;
-  --Brødtekst: "Jost-light", sans-serif;
-  --Underpunkter-medium: "Jost-medium", sans-serif;
-  --Underpunkter-light: "Jost-light", sans-serif;
-  --Menupunkter: "Jost-regular", sans-serif;
-
-  --Titel-mobil: "Jost-Medium", sans-serif;
-  --H1-mobil: "Jost-light", sans-serif;
-  --H2-mobil-medium: "Jost-medium", sans-serif;
-  --H2-mobil-light: "Jost-light", sans-serif;
-  --Brødtekst-mobil: "Jost-light", sans-serif;
 }
 
+/* Typografi */
 .Titel {
   font-family: var(--font-medium);
 }
-
 .H1 {
+  font-family: var(--font-light);
+}
+.H2-medium {
+  font-family: var(--font-medium);
+}
+.H2-light {
+  font-family: var(--font-light);
+}
+.Brødtekst {
+  font-family: var(--font-light);
+}
+.Underpunkter-medium {
+  font-family: var(--font-medium);
+}
+.Underpunkter-light {
+  font-family: var(--font-light);
+}
+.Menupunkter {
+  font-family: var(--font-regular);
+}
+
+.Titel-mobil {
+  font-family: var(--font-medium);
+}
+.H1-mobil {
+  font-family: var(--font-light);
+}
+.H2-mobil-medium {
+  font-family: var(--font-medium);
+}
+.H2-mobil-light {
+  font-family: var(--font-light);
+}
+.Brødtekst-mobil {
   font-family: var(--font-light);
 }
 
