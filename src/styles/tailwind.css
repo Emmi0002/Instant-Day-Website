@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@plugin '@tailwindcss/typography';
+@plugin '@tailwindcss/forms';
+@import "tailwindcss-animated";
+@import "tailwindcss-intersect";
+
+@font-face {
+  font-family: "Jost-light";
+  src: url("/fonts/Jost-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Jost-regular";
+  src: url("/fonts/Jost-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Jost-medium";
+  src: url("/fonts/Jost-Medium.ttf") format("truetype");
+}
+
+@theme {
+  /* Her tilføjes theme variable // tokens */
+
+  /* Farver */
+  --primary-color-black: #303030;
+  --primary-color-offwhite: #fffdf9;
+  --primary-color-yellow: #fbb94b;
+  --primary-color-green: #665d26;
+  --primary-color-red: #ab5534;
+
+  /* Typografi */
+  --font-medium: "Jost-medium", sans-serif;
+  --font-light: "Jost-light", sans-serif;
+  --font-regular: "Jost-regular", sans-serif;
+}
+
+/* Typografi */
+.Titel {
+  font-family: var(--font-medium);
+}
+.H1 {
+  font-family: var(--font-light);
+}
+.H2-medium {
+  font-family: var(--font-medium);
+}
+.H2-light {
+  font-family: var(--font-light);
+}
+.Brødtekst {
+  font-family: var(--font-light);
+}
+.Underpunkter-medium {
+  font-family: var(--font-medium);
+}
+.Underpunkter-light {
+  font-family: var(--font-light);
+}
+.Menupunkter {
+  font-family: var(--font-regular);
+}
+
+.Titel-mobil {
+  font-family: var(--font-medium);
+}
+.H1-mobil {
+  font-family: var(--font-light);
+}
+.H2-mobil-medium {
+  font-family: var(--font-medium);
+}
+.H2-mobil-light {
+  font-family: var(--font-light);
+}
+.Brødtekst-mobil {
+  font-family: var(--font-light);
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@layer components {
+}
+@layer utilities {
+}
