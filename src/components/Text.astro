@@ -1,0 +1,23 @@
+---
+const { teksttype = "Brødtekst", stylingclasses = "" } = Astro.props;
+
+const sizeClasses = {
+    // Web
+  titel: "text-5xl Titel",
+  H1: "text-4xl H1",
+  H2medium: "text-3xl H2-medium",
+  H2light: "text-3xl H2-light",
+  Brødtekst: "text-lg Brødtekst",
+  Underpunktermedium: "text-base Underpunktermedium",
+  Underpunkterlight: "text-base Underpunkterlight",
+  Menupunkter: "text-sm Menupunkter",
+//   Mobil
+  Titelmobil: "text-3xl Titel-mobil",
+  H1mobil: "text-2xl H1-mobil",
+  H2mobilmedium: "text-xl H2-mobil-medium",
+  H2mobillight: "text-xl H2-mobil-light",
+  Brødtekstmobil: "text-base Brødtekst-mobil",
+};
+---
+
+<p class:list={[sizeClasses[teksttype], stylingclasses]}><slot /></p>
