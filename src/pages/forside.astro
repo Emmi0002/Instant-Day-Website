@@ -4,7 +4,9 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <section class="hero">
-    <div class="flex flex-col place-content-center gap-3 xl:flex-row">
+    <div
+      class="flex flex-col place-content-center gap-15 xl:flex-row xl:gap-100"
+    >
       <div class="mr-10 ml-10 flex flex-col items-center gap-3">
         <h1
           class="w-75 justify-start text-center text-5xl uppercase xl:w-150 xl:text-8xl"
@@ -49,14 +51,14 @@ import Layout from "../layouts/Layout.astro";
       <div class="relative mt-15 h-60 w-56 place-self-center">
         <div>
           <img
-            class="absolute h-50 w-40 rotate-[8.19deg] border"
+            class="relative -top-20 h-80 w-100 rotate-[8.19deg] border max-xl:absolute max-xl:h-50 max-xl:w-40 xl:-top-30 xl:-left-50"
             src=""
             alt=""
           />
         </div>
         <div>
           <img
-            class="absolute top-25 left-20 h-50 w-40 rotate-[-23.47deg] border"
+            class="relative left-25 h-80 w-100 rotate-[-23.47deg] border max-xl:absolute max-xl:h-50 max-xl:w-40 xl:-top-90 xl:left-0"
             src=""
             alt=""
           />
@@ -65,7 +67,9 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
   <section class="home-info-what mt-25 h-[513px] place-content-center">
-    <div class="flex max-h-175 flex-row gap-7 bg-[#2F2F2F] xl:flex-row-reverse">
+    <div
+      class="flex flex-row gap-7 bg-[#2F2F2F] xl:h-125 xl:w-[1885] xl:flex-row-reverse"
+    >
       <div class="m-5 flex flex-col gap-5 place-self-center">
         <div>
           <h1 class="text-2xl text-white">What is Instant Day?</h1>
@@ -150,7 +154,7 @@ import Layout from "../layouts/Layout.astro";
     <section class="home-former-gallery mt-20 bg-[#2F2F2F]">
       <div>
         <div>
-          <h1 class="place-self-center pt-10 text-white">
+          <h1 class="place-self-center pt-10 text-white xl:text-5xl">
             Former participants has uploaded
           </h1>
         </div>
@@ -162,9 +166,13 @@ import Layout from "../layouts/Layout.astro";
         >
           <div class="relative -top-10 h-10 w-30 self-center bg-[#2F2F2F]">
           </div>
-          <div class="relative top-510 h-10 w-30 self-center bg-[#2F2F2F]">
+          <div
+            class="relative top-510 h-10 w-30 self-center bg-[#2F2F2F] xl:top-178"
+          >
           </div>
-          <div class="flex flex-col gap-10 place-self-center pr-15 pb-15 pl-15">
+          <div
+            class="flex flex-col gap-10 place-self-center pr-15 pb-15 pl-15 xl:grid xl:grid-cols-3"
+          >
             <img class="h-72 w-60 border" src="" alt="1" />
             <img class="h-72 w-60 border" src="" alt="2" />
             <img class="h-72 w-60 border" src="" alt="3" />
