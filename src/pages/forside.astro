@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Steps from "../components/steps.astro";
 ---
 
 <Layout>
@@ -68,17 +69,19 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </section>
-  <section class="home-info-what mt-25 h-[913px] w-auto max-xl:h-96">
+  <section class="home-info-what mt-25 mb-55 h-[913px] w-auto max-xl:h-96">
     <div
       class="flex flex-row justify-between bg-[#2F2F2F] xl:flex-row-reverse xl:place-content-start xl:gap-50"
     >
       <div class="m-5 flex flex-col place-content-center gap-5">
         <div>
-          <h1 class="H2-medium text-white xl:text-7xl">What is Instant Day?</h1>
+          <h1 class="H2-medium w-full text-white max-xl:text-4xl xl:text-7xl">
+            What is Instant Day?
+          </h1>
         </div>
         <div class="">
           <p
-            class="Brødtekst w-48 text-xs font-light text-white xl:w-200 xl:text-3xl"
+            class="Brødtekst w-70 text-white max-xl:text-xl xl:w-200 xl:text-3xl"
           >
             October 18 is Instant Day - a day all about celebrating instant
             photography. So get out your Polaroid, Instax or whatever instant
@@ -94,159 +97,162 @@ import Layout from "../layouts/Layout.astro";
         class="place-self-center rounded-full max-xl:bg-none xl:bg-[#fffdf9]"
       >
         <img
-          class="max-xl:W-40 m-5 place-self-start max-xl:h-60 xl:w-[481px]"
+          class="max-xl:W-40 m-5 place-self-start max-xl:h-fit xl:w-[481px]"
           src="/images/camcam.svg"
           alt="1"
         />
       </div>
     </div>
-
-    <section class="home-info-why max-xl:mt-10 xl:mt-50">
-      <div class="">
-        <div>
-          <div
-            class="mr-11 ml-11 flex flex-col place-items-center gap-4 xl:w-220 xl:place-self-center xl:text-xl"
-          >
-            <h2 class="H2-light justify-start self-stretch text-center">
-              WHY INSTANT PHOTOGRAPHY?
-            </h2>
-            <p>
-              Instant photography began in the 1940s, when Edwin Land invented
-              it after his daughter asked to see photos right away. Polaroid
-              became a cultural icon, booming in the 70s and 80s before nearly
-              vanishing in the digital age. Today, as people seek analogue,
-              offline experiences, instant photography is making a
-              comeback—offering a tactile, life-affirming way to capture
-              memories. Let’s celebrate life and keep making them.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="home-former-gallery mt-20 bg-[#2F2F2F]">
+  </section>
+  <section class="home-info-why max-xl:mt-10 xl:mb-50">
+    <div class="">
       <div>
-        <div>
-          <h1 class="H2-medium place-self-center pt-10 text-white xl:text-5xl">
-            Former participants has uploaded
-          </h1>
+        <div
+          class="mr-11 ml-11 flex flex-col place-items-center gap-15 xl:w-220 xl:place-self-center xl:text-xl"
+        >
+          <h2
+            class="H2-light justify-start self-stretch text-center max-xl:text-5xl xl:text-7xl"
+          >
+            WHY INSTANT PHOTOGRAPHY?
+          </h2>
+          <p class="Brødtekst text-3xl">
+            Instant photography began in the 1940s, when Edwin Land invented it
+            after his daughter asked to see photos right away. Polaroid became a
+            cultural icon, booming in the 70s and 80s before nearly vanishing in
+            the digital age. Today, as people seek analogue, offline
+            experiences, instant photography is making a comeback—offering a
+            tactile, life-affirming way to capture memories. Let’s celebrate
+            life and keep making them.
+          </p>
         </div>
       </div>
+    </div>
+  </section>
+  <Steps />
+  <section class="home-former-gallery mt-20 bg-[#2F2F2F]">
+    <div>
+      <div>
+        <h1
+          class="H2-medium place-self-center pt-10 text-white max-xl:text-4xl xl:text-5xl"
+        >
+          Former participants has uploaded
+        </h1>
+      </div>
+    </div>
 
-      <div class="p-15">
-        <div class="flex flex-col gap-5 border border-white">
-          <div
-            class="flex flex-col gap-10 place-self-center self-center pr-15 pb-15 pl-15 xl:grid xl:grid-cols-3"
-          >
-            <img
-              class=""
-              src="/images/photos/01-amager-faelled-instaxsquare01 1.png"
-              alt="1"
-            />
-            <img
-              class="col-span-2"
-              src="/images/photos/16-vejlands-alle-panorama-2 1.png"
-              alt="2"
-            />
-            <img
-              class=""
-              src="images/photos/Kolonihave_aebletrae-removebg-preview 1.png"
-              alt="3"
-            />
-            <img
-              class=""
-              src="images/photos/09-amager-strand-nat 1.png"
-              alt="4"
-            />
-            <img
-              class=""
-              src="images/photos/08-karlstrup_kalkgrav_kaffe_08-2025 1.png"
-              alt="5"
-            />
-          </div>
+    <div class="p-15">
+      <div class="flex flex-col gap-5 border border-white">
+        <div
+          class="flex flex-col gap-10 place-self-center self-center pr-15 pb-15 pl-15 xl:grid xl:grid-cols-3"
+        >
+          <img
+            class=""
+            src="/images/photos/01-amager-faelled-instaxsquare01 1.png"
+            alt="1"
+          />
+          <img
+            class="col-span-2"
+            src="/images/photos/16-vejlands-alle-panorama-2 1.png"
+            alt="2"
+          />
+          <img
+            class=""
+            src="images/photos/Kolonihave_aebletrae-removebg-preview 1.png"
+            alt="3"
+          />
+          <img
+            class=""
+            src="images/photos/09-amager-strand-nat 1.png"
+            alt="4"
+          />
+          <img
+            class=""
+            src="images/photos/08-karlstrup_kalkgrav_kaffe_08-2025 1.png"
+            alt="5"
+          />
         </div>
       </div>
-    </section>
-    <section class="home-inspiration">
-      <div class="mt-20 flex flex-col gap-55 xl:p-15">
-        <div
-          class="h-64 w-80 content-center place-self-center bg-[#ab5534] xl:h-80 xl:w-full xl:rounded-4xl"
+    </div>
+  </section>
+  <section class="home-inspiration">
+    <div class="mt-20 flex flex-col gap-35 max-xl:p-5 xl:p-15">
+      <div
+        class="h-fit w-80 w-full content-center place-self-center rounded-4xl bg-[#ab5534] p-5 xl:h-80"
+      >
+        <h1
+          class="justify-start place-self-center text-center leading-[-1] text-[#fffdf9] max-xl:w-50 max-xl:text-4xl xl:w-[852px] xl:text-5xl"
         >
-          <h1
-            class="w-44 justify-start place-self-center text-center text-2xl text-[#fffdf9] xl:w-[852px] xl:text-5xl"
+          You can also get a lot of inspiration from the art Photography scene.
+        </h1>
+      </div>
+      <div
+        class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row xl:gap-50"
+      >
+        <div class="rounded-[57px] bg-zinc-300">
+          <img src="/images/photos/10137611445_c8646f637b_b 1.png" alt="" />
+        </div>
+        <div>
+          <p
+            class="Underpunkter-light w-[502px] justify-start place-self-center text-3xl"
           >
-            You can also get a lot of inspiration from the art Photography
-            scene.
-          </h1>
-        </div>
-        <div
-          class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row xl:gap-50"
-        >
-          <div class="rounded-[57px] bg-zinc-300">
-            <img src="/images/photos/10137611445_c8646f637b_b 1.png" alt="" />
-          </div>
-          <div>
-            <p
-              class="Underpunkter-light w-[302px] justify-start place-self-center text-2xl"
-            >
-              Dan Isaac Wallin is a swedish art photographer, who uses large
-              format and vintage polaroid cameras for his work. His work hangs
-              in numerous houses as posters.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row-reverse xl:gap-50"
-        >
-          <div class="place-self-center rounded-[57px] bg-zinc-300">
-            <img src="images/photos/Mpol-Moshe-Brakha_large 1.png" alt="" />
-          </div>
-          <div>
-            <p class="Underpunkter-light w-[302px] justify-start text-2xl">
-              Maripol is a french artist/photographer/film producer. Her claim
-              to fame was in the 1980’s, where she photographed famous people
-              with a Polaroid SX-70. Her photographs are still very influential
-              in the fashion industry.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row xl:gap-50"
-        >
-          <div class="rounded-[57px] bg-zinc-300">
-            <img
-              src="images/photos/329790270_3510025345936303_31638848077260639_n 1.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <p class="Underpunkter-light w-[302px] justify-start text-2xl">
-              Mette Kelter is a danish art photographer, who often experiments
-              with deliberate destruction of the chemical process in instant
-              photos. One of the key words here is unpredictability in the work
-              process, which leads to interesting and unique artworks
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row-reverse xl:gap-50"
-        >
-          <div class="rounded-[57px] bg-zinc-300">
-            <img
-              src="images/photos/ecccb61d9399c57ac81f1e570c74b0ad.png 1.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <p class="Underpunkter-light w-[302px] justify-start text-2xl">
-              The Polaroid Collection, once assembled by the company and
-              featuring works by famous photographers, was auctioned off after
-              Polaroid’s 2008 bankruptcy. Fortunately, books like The Polaroid
-              Book by Steve Crist and Barbara Hitchcock preserve its images.
-            </p>
-          </div>
+            Dan Isaac Wallin is a swedish art photographer, who uses large
+            format and vintage polaroid cameras for his work. His work hangs in
+            numerous houses as posters.
+          </p>
         </div>
       </div>
-    </section>
+      <div
+        class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row-reverse xl:gap-50"
+      >
+        <div class="place-self-center rounded-[57px] bg-zinc-300">
+          <img src="images/photos/Mpol-Moshe-Brakha_large 1.png" alt="" />
+        </div>
+        <div>
+          <p class="Underpunkter-light w-[502px] justify-start text-3xl">
+            Maripol is a french artist/photographer/film producer. Her claim to
+            fame was in the 1980’s, where she photographed famous people with a
+            Polaroid SX-70. Her photographs are still very influential in the
+            fashion industry.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row xl:gap-50"
+      >
+        <div class="rounded-[57px] bg-zinc-300">
+          <img
+            src="images/photos/329790270_3510025345936303_31638848077260639_n 1.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <p class="Underpunkter-light w-[502px] justify-start text-3xl">
+            Mette Kelter is a danish art photographer, who often experiments
+            with deliberate destruction of the chemical process in instant
+            photos. One of the key words here is unpredictability in the work
+            process, which leads to interesting and unique artworks
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row-reverse xl:gap-50"
+      >
+        <div class="rounded-[57px] bg-zinc-300">
+          <img
+            src="images/photos/ecccb61d9399c57ac81f1e570c74b0ad.png 1.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <p class="Underpunkter-light w-[502px] justify-start text-3xl">
+            The Polaroid Collection, once assembled by the company and featuring
+            works by famous photographers, was auctioned off after Polaroid’s
+            2008 bankruptcy. Fortunately, books like The Polaroid Book by Steve
+            Crist and Barbara Hitchcock preserve its images.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <style>
