@@ -78,6 +78,34 @@
   font-family: var(--font-light);
 }
 
+/* Farver */
+
+.color-primary-black {
+  color: var(--primary-color-black);
+}
+.color-primary-offwhite {
+  color: var(--primary-color-offwhite);
+}
+.color-primary-yellow {
+  color: var(--primary-color-yellow);
+}
+.color-primary-green {
+  color: var(--primary-color-green);
+}
+.color-primary-red {
+  color: var(--primary-color-red);
+}
+
+.bg-primary-green {
+  background-color: var(--primary-color-green);
+}
+.bg-primary-black {
+  background-color: var(--primary-color-black);
+}
+.bg-primary-offwhite {
+  background-color: var(--primary-color-offwhite);
+}
+
 @layer base {
   *,
   ::after,
