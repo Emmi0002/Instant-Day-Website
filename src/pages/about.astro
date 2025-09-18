@@ -2,18 +2,19 @@
 import Layout from "../layouts/Layout.astro";
 import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
+import { Image } from "astro:assets";
 const { title = "About Us" } = Astro.props;
 ---
 
 <Layout title={title}>
   <section
     id="about-us"
-    class="max-xl:flex max-xl:flex-col max-xl:gap-30 xl:flex xl:flex-col xl:gap-30"
+    class="max-xl:flex max-xl:flex-col max-xl:gap-30 xl:flex xl:flex-col xl:gap-30 md:mb-20"
   >
     <div>
       <Text
         teksttype="h1"
-        stylingclasses="xl:flex xl:place-self-center xl:ml-40 max-xl:flex max-xl:place-self-center"
+        stylingclasses="text-center"
         >ABOUT US</Text
       >
     </div>
@@ -26,7 +27,7 @@ const { title = "About Us" } = Astro.props;
       <div
         class="max-xl:flex max-xl:flex-col max-xl:gap-10 max-xl:place-self-center xl:flex xl:flex-col xl:place-self-center"
       >
-        <Text teksttype="titel" stylingclasses="xl:w-100 place-self-center"
+        <Text teksttype="h1" stylingclasses="xl:w-100 place-self-center md:mb-10"
           >Who are we?</Text
         >
         <Text
@@ -44,16 +45,22 @@ const { title = "About Us" } = Astro.props;
   </section>
   <section
     id="sumbission-reviewed-by"
-    class="bg-primary-black max-xl:mb-10 max-xl:pt-10 max-xl:pb-10 xl:mb-10 xl:pb-10"
+    class="bg-primary-black max-xl:mb-10 max-xl:pt-10 max-xl:pb-10 xl:mb-10 xl:pb-10 md:pl-40 relative"
   >
     <div class="absolute justify-self-end max-xl:hidden xl:flex">
-      <img class="xl:h-167" src="/images/elipse-about.svg" alt="" />
+       <Image
+      src="/images/illustration-section.svg"
+      alt="Form illustration"
+      width="500"
+      height="500"
+      class="absolute hidden md:block"
+    />
     </div>
     <div
       class="place-self-center max-xl:flex max-xl:flex-col max-xl:gap-20 xl:flex xl:flex-col xl:gap-20"
     >
       <div class="place-self-center">
-        <Text teksttype="h1" stylingclasses="color-primary-offwhite"
+        <Text teksttype="h1" stylingclasses="color-primary-offwhite md:mt-10"
           >Submissions reviewed by ...</Text
         >
       </div>

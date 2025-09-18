@@ -8,7 +8,7 @@ const { title = "Home" } = Astro.props;
 ---
 
 <Layout title={title}>
-  <section class="hero mx-10 md:grid grid-cols-2 md:py-30 md:mx-50 mb-20">
+  <section class="hero mx-10 md:grid grid-cols-2 md:py-30 md:mx-50 mb-20 intersect:animate-fade-down intersect:animate-duration-[5000ms]">
     <article class="md:-mx-15 flex flex-col items-center gap-3">
       <div>
         <Text teksttype="titel" stylingclasses="mb-6 text-center"
@@ -87,7 +87,7 @@ const { title = "Home" } = Astro.props;
       class="md:hidden mx-auto"
     />
   </section>
-  <section class="relative z-10 mt-20 md:mt-60 md:grid grid-cols-[1fr_2fr_1fr] gap-10">
+  <section class="relative z-10 mt-20 md:mt-60 md:grid grid-cols-[1fr_2fr_1fr] gap-10 intersect:animate-fade-down intersect:animate-duration-[5000ms]">
     <Image
       src="/images/Why-section-1.svg"
       alt="Form illustration"
