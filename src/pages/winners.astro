@@ -3,9 +3,10 @@ import Text from "../components/Text.astro";
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/footer.astro";
 import { Image } from "astro:assets";
+const { title = "Winners and Nominees" } = Astro.props;
 ---
 
-<Layout>
+<Layout title={title}>
   <section class="md:grid grid-cols-2 items-center gap-5 mx-10 md:mx-50">
     <div>
       <Text teksttype="h1" stylingclasses="mb-10">WINNERS & NOMINEES</Text>

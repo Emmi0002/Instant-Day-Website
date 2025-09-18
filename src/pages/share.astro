@@ -3,9 +3,10 @@ import Text from '../components/Text.astro';
 import Layout from "../layouts/Layout.astro";
 import Form from '../components/Form.astro';
 import Steps from '../components/steps.astro';
+const { title = "Share" } = Astro.props;
 ---
 
-<Layout>
+<Layout title={title}>
 <Text teksttype="h1" stylingclasses="text-center mt-10 mb-6">SHARE YOUR MOMENTS</Text>
 <Text teksttype="brødtekst" stylingclasses="text-center">Ready to share your instants?</Text>
 <Text teksttype="brødtekst" stylingclasses="text-center mb-10 px-5">Got an instant photo ready for the public? In order to take part in Instant Day:</Text>

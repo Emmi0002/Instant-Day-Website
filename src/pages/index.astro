@@ -4,9 +4,10 @@ import Steps from "../components/steps.astro";
 import Text from "../components/Text.astro";
 import { Image } from "astro:assets";
 import Button from "../components/Button.astro";
+const { title = "Home" } = Astro.props;
 ---
 
-<Layout>
+<Layout title={title}>
   <section class="hero mx-10 md:grid grid-cols-2 md:py-30 md:mx-50 mb-20">
     <article class="md:-mx-15 flex flex-col items-center gap-3">
       <div>
