@@ -2,9 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
+const { title = "Thank You" } = Astro.props;
 ---
 
-<Layout>
+<Layout title={title}>
   <section class="mx-10 md:mx-50">
     <div class="xl:flex xl:flex-row xl:gap-50 xl:place-self-center">
       <div>
