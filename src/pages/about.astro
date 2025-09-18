@@ -1,0 +1,175 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Text from "../components/Text.astro";
+import Button from "../components/Button.astro";
+---
+
+<Layout>
+  <section
+    id="about-us"
+    class="max-xl:flex max-xl:flex-col max-xl:gap-30 xl:flex xl:flex-col xl:gap-30"
+  >
+    <div>
+      <Text
+        teksttype="h1"
+        stylingclasses="xl:flex xl:place-self-center xl:ml-40 max-xl:flex max-xl:place-self-center"
+        >ABOUT US</Text
+      >
+    </div>
+    <div
+      class="max-xl:mb-10 max-xl:flex max-xl:flex-col-reverse max-xl:gap-10 max-xl:place-self-center xl:mb-20 xl:flex xl:flex-row xl:gap-20 xl:place-self-center"
+    >
+      <div class="max-xl:flex max-xl:place-self-center">
+        <img class="max-xl:h-60 xl:h-80" src="/images/people.svg" alt="" />
+      </div>
+      <div
+        class="max-xl:flex max-xl:flex-col max-xl:gap-10 max-xl:place-self-center xl:flex xl:flex-col xl:place-self-center"
+      >
+        <Text teksttype="titel" stylingclasses="xl:w-100 place-self-center"
+          >Who are we?</Text
+        >
+        <Text
+          teksttype="brødtekst"
+          stylingclasses="xl:w-100 max-xl:w-100 place-self-center"
+          >Instant Day is a small project run by a couple of lecturers from the
+          Multimedia Design programme at EK - Business Academy Copenhagen.
+          Instant Day is a bi-annual project where lecturers and students
+          collaborate on a digital design and communication project related to
+          the Instant Day competition (this website). In essence, we just want
+          to promote instant photography and have fun while doing it.
+        </Text>
+      </div>
+    </div>
+  </section>
+  <section
+    id="sumbission-reviewed-by"
+    class="bg-primary-black max-xl:mb-10 max-xl:pt-10 max-xl:pb-10 xl:mb-10 xl:pb-10"
+  >
+    <div class="absolute justify-self-end max-xl:hidden xl:flex">
+      <img class="xl:h-167" src="/images/elipse-about.svg" alt="" />
+    </div>
+    <div
+      class="place-self-center max-xl:flex max-xl:flex-col max-xl:gap-20 xl:flex xl:flex-col xl:gap-20"
+    >
+      <div class="place-self-center">
+        <Text teksttype="h1" stylingclasses="color-primary-offwhite"
+          >Submissions reviewed by ...</Text
+        >
+      </div>
+      <div
+        class="max-xl:flex max-xl:flex-col max-xl:gap-5 max-xl:pr-10 max-xl:pl-10 xl:grid xl:grid-cols-2 xl:grid-rows-3 xl:gap-10"
+      >
+        <div
+          class="max-xl:flex max-xl:flex-row max-xl:gap-5 xl:flex xl:flex-row xl:gap-5"
+        >
+          <div><img src="/images/photos/jonas.png" alt="1" /></div>
+          <div class="xl:flex xl:w-65 xl:flex-col xl:place-self-center">
+            <Text
+              teksttype="underpunkter_medium"
+              stylingclasses="color-primary-offwhite"
+              >Jonas Hasle
+            </Text>
+            <Text teksttype="brødtekst" stylingclasses="color-primary-offwhite"
+              >(Assistant lecturer, Multimedia Design programme at EK)</Text
+            >
+          </div>
+        </div>
+        <div
+          class="max-xl:flex max-xl:flex-row max-xl:gap-5 xl:flex xl:flex-row xl:gap-5"
+        >
+          <div><img src="/images/photos/anders.png" alt="1" /></div>
+          <div class="xl:flex xl:w-65 xl:flex-col xl:place-self-center">
+            <Text
+              teksttype="underpunkter_medium"
+              stylingclasses="color-primary-offwhite"
+              >Anders Dollerup
+            </Text>
+            <Text teksttype="brødtekst" stylingclasses="color-primary-offwhite"
+              >(Associate lecturer, Multimedia Design programme at EK)</Text
+            >
+          </div>
+        </div>
+        <div
+          class="max-xl:flex max-xl:flex-row max-xl:gap-5 xl:flex xl:flex-row xl:gap-5"
+        >
+          <div><img src="/images/photos/birgitte.png" alt="1" /></div>
+          <div class="xl:flex xl:w-65 xl:flex-col xl:place-self-center">
+            <Text
+              teksttype="underpunkter_medium"
+              stylingclasses="color-primary-offwhite"
+              >Birgitte Heide
+            </Text>
+            <Text teksttype="brødtekst" stylingclasses="color-primary-offwhite"
+              >(Associate lecturer, Multimedia Design programme at EK)</Text
+            >
+          </div>
+        </div>
+        <div
+          class="max-xl:flex max-xl:flex-row max-xl:gap-5 xl:flex xl:flex-row xl:gap-5"
+        >
+          <div><img src="/images/photos/stefan.png" alt="1" /></div>
+          <div class="xl:flex xl:w-65 xl:flex-col xl:place-self-center">
+            <Text
+              teksttype="underpunkter_medium"
+              stylingclasses="color-primary-offwhite"
+              >Stefan Grage
+            </Text>
+            <Text teksttype="brødtekst" stylingclasses="color-primary-offwhite"
+              >(Associate lecturer, Multimedia Design programme at EK)</Text
+            >
+          </div>
+        </div>
+        <div
+          class="max-xl:flex max-xl:flex-row max-xl:gap-5 xl:flex xl:flex-row xl:gap-5"
+        >
+          <div><img class="w-34" src="/images/photos/ek.png" alt="1" /></div>
+          <div class="xl:flex xl:w-65 xl:flex-col xl:place-self-center">
+            <Text
+              teksttype="underpunkter_medium"
+              stylingclasses="color-primary-offwhite"
+              >Students on the Digital Design
+            </Text>
+            <Text teksttype="brødtekst" stylingclasses="color-primary-offwhite"
+              >Elective on the Multimedia Design programme at KEA
+            </Text>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sponsors" class="m-20">
+    <div
+      class="place-self-center max-xl:flex max-xl:flex-col max-xl:gap-20 xl:flex xl:flex-row xl:gap-50"
+    >
+      <div>
+        <img
+          src="/images/Skærmbillede_2025-09-15_kl._13.30.46-removebg-preview 1.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="max-xl:flex max-xl:flex-col max-xl:gap-5 xl:flex xl:flex-col xl:gap-5"
+      >
+        <Text teksttype="titel" stylingclasses="xl:text-end max-xl:text-center"
+          >Sponsors</Text
+        >
+        <Text teksttype="brødtekst" stylingclasses="xl:text-end xl:w-150"
+          >Instant Day is not affiliated to any companies within the Instant
+          Photography industry. The only organisation backing us is EK -
+          Business Academy Copenhagen. At least so far;-)</Text
+        >
+        <div
+          class="underline max-xl:place-self-center xl:-mr-6 xl:place-self-end"
+        >
+          <Button
+            ctaText="See EK - Business"
+            ctaLink=""
+            bgColor="var(--primary-color-yellow)"
+            textColor="var(--primary-color-black)"
+            borderColor="var(--primary-color-yellow)"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

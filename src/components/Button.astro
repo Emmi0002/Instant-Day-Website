@@ -5,7 +5,7 @@ const {
   bgColor = "var(--primary-color-green)",
   textColor = "var(--primary-color-offwhite)",
   borderColor = "var(--primary-color-black)", //
-  id
+  id,
 } = Astro.props;
 ---
 
@@ -13,7 +13,7 @@ const {
   id={id}
   href={ctaLink}
   style={`background-color: ${bgColor}; color: ${textColor}; border: 1px solid ${borderColor};`}
-  class="px-5 py-1 rounded-4xl inline-block text-center mr-5"
+  class="mr-5 inline-block rounded-4xl px-5 py-1 text-center"
 >
   {ctaText}
 </a>
