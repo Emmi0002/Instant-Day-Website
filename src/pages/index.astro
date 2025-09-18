@@ -1,149 +1,135 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Steps from "../components/steps.astro";
-import Footer from "../components/footer.astro";
 import Text from "../components/Text.astro";
+import { Image } from "astro:assets";
+import Button from "../components/Button.astro";
 ---
 
 <Layout>
-  <section class="hero">
-    <div
-      class="flex flex-col place-content-center gap-15 xl:flex-row xl:gap-100"
-    >
-      <div class="mr-10 ml-10 flex flex-col items-center gap-3">
-        <h1
-          class="H1 w-75 justify-start text-center text-5xl uppercase xl:w-150 xl:text-8xl"
-        >
-          instant day
-        </h1>
-
-        <p class="Brødtekst w-72 text-center text-black xl:text-xl">
-          Join us in honouring Instant Day, where every click captures a memory
-          and every print tells a story worth keeping
-        </p>
-        <p
-          class="Brødtekst mt-3 mb-3 w-35 border-t border-b p-1.5 text-center text-black xl:w-45 xl:text-xl"
-        >
-          18. October 2025
-        </p>
-        <div class="mt-5 flex flex-col items-center">
-          <img
-            class="max-xl:h-16 max-xl:w-60"
-            src="/images/countdown.png"
-            alt=""
-          />
-        </div>
-        <div class="mt-10 flex flex-row justify-center divide-x-1">
-          <p
-            class="Underpunkter-medium pt-3 pr-5 pb-3 text-center text-[8.91px] font-bold xl:text-xl"
-          >
-            SAVE THE DATE
-          </p>
-          <p
-            class="Underpunkter-medium pt-3 pr-5 pb-3 pl-5 text-center text-[8.91px] font-bold text-black xl:text-xl"
-          >
-            SHARE YOUR INSTANT
-          </p>
-          <p
-            class="Underpunkter-medium pt-3 pb-3 pl-5 text-center text-[8.91px] font-bold text-black xl:text-xl"
-          >
-            2025 CONTRIBUTIONS
-          </p>
-        </div>
-      </div>
-      <div
-        class="w- relative mt-15 h-150 place-self-center max-xl:h-60 max-xl:w-56"
-      >
-        <div>
-          <img
-            class="relative -top-20 -left-10 max-xl:absolute xl:-top-15 xl:-left-50 xl:h-100"
-            src="images/photos/05-dobbelt-exp-orestad 1.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="relative left-15 max-xl:absolute xl:-top-85 xl:left-0 xl:h-100"
-            src="/images/photos/10-amager-strand-vandbad 1.png"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="home-info-what mt-25 mb-55 h-[913px] w-auto max-xl:h-96">
-    <div
-      class="flex flex-row justify-between bg-[#2F2F2F] xl:flex-row-reverse xl:place-content-start xl:gap-50"
-    >
-      <div class="m-5 flex flex-col place-content-center gap-5">
-        <div>
-          <h1 class="H2-medium w-full text-white max-xl:text-4xl xl:text-7xl">
-            What is Instant Day?
-          </h1>
-        </div>
-        <div class="">
-          <p
-            class="Brødtekst w-70 text-white max-xl:text-xl xl:w-200 xl:text-3xl"
-          >
-            October 18 is Instant Day - a day all about celebrating instant
-            photography. So get out your Polaroid, Instax or whatever instant
-            photography camera you are using, and show us your instants. Instant
-            Day isn’t really a photo competition, it’s more a homage to good old
-            analogue, instant photography - everybody who participates are
-            winners:-) But: We do have a nice prize for one lucky instant
-            photographer!
-          </p>
-        </div>
-      </div>
-      <div
-        class="place-self-center rounded-full max-xl:bg-none xl:bg-[#fffdf9]"
-      >
-        <img
-          class="max-xl:W-40 m-5 place-self-start max-xl:h-fit xl:w-[481px]"
-          src="/images/camcam.svg"
-          alt="1"
-        />
-      </div>
-    </div>
-  </section>
-  <section class="home-info-why max-xl:mt-10 xl:mb-50">
-    <div class="">
+  <section class="hero mx-10 md:grid grid-cols-2 md:py-30 md:mx-50 mb-20">
+    <article class="md:-mx-15 flex flex-col items-center gap-3">
       <div>
-        <div
-          class="mr-11 ml-11 flex flex-col place-items-center gap-15 xl:w-220 xl:place-self-center xl:text-xl"
+        <Text teksttype="titel" stylingclasses="mb-6 text-center"
+          >INSTANT DAY</Text
         >
-          <h2
-            class="H2-light justify-start self-stretch text-center max-xl:text-5xl xl:text-7xl"
-          >
-            WHY INSTANT PHOTOGRAPHY?
-          </h2>
-          <p class="Brødtekst text-3xl">
-            Instant photography began in the 1940s, when Edwin Land invented it
-            after his daughter asked to see photos right away. Polaroid became a
-            cultural icon, booming in the 70s and 80s before nearly vanishing in
-            the digital age. Today, as people seek analogue, offline
-            experiences, instant photography is making a comeback—offering a
-            tactile, life-affirming way to capture memories. Let’s celebrate
-            life and keep making them.
-          </p>
-        </div>
+        <Text teksttype="brødtekst" stylingclasses="mb-10 text-center"
+          >Join us in honouring Instant Day, where every click captures a memory
+          and every print tells a story worth keeping</Text
+        >
+        <Text
+          teksttype="h2_medium"
+          stylingclasses="mb-6 text-center border-b-2 border-t-2 py-4"
+          >18. October 2025</Text
+        >
       </div>
-    </div>
+      <Image
+        src="/images/countdown-2.svg"
+        alt="Form illustration"
+        width="350"
+        height="350"
+        class="mx-auto"
+      />
+      <div class="-mx-40 mt-10 md:flex flex-row justify-center divide-x-1">
+        <Text
+          teksttype="underpunkter_medium"
+          stylingclasses="md:mb-10 text-center border-b-2 py-4 border-r-0 md:border-r-2 md:border-b-0 px-4">SAVE THE DATE</Text
+        >
+        <Text
+          teksttype="underpunkter_medium"
+          stylingclasses="md:mb-10 text-center border-r-0 px-4 py-4 border-b-2 md:border-b-0">SHARE YOUR INSTANT</Text
+        >
+        <Text
+          teksttype="underpunkter_medium"
+          stylingclasses="md:mb-10 text-center py-4 border-l-0 md:border-l-2 px-4"
+          >2025 CONTRIBUTIONS</Text
+        >
+      </div>
+    </article>
+    <article>
+      <Image
+        src="/images/galleri-hero.svg"
+        alt="Form illustration"
+        width="500"
+        height="500"
+        class="mx-auto -mr-20 hidden md:block"
+      />
+    </article>
   </section>
-  <Steps />
+  <section class="bg-primary-black relative md:grid grid-cols-[1fr_2fr] py-10 md:py-30">
+    <div class="md:col-start-2 m-5 md:flex flex-col place-content-center gap-5 md:pr-80">
+      <Text teksttype="h1" stylingclasses="mb-6 color-primary-offwhite"
+        >What is Instant Day?</Text
+      >
+      <Text teksttype="brødtekst" stylingclasses="mb-6 color-primary-offwhite"
+        >October 18 is Instant Day - a day all about celebrating instant
+        photography. So get out your Polaroid, Instax or whatever instant
+        photography camera you are using, and show us your instants. Instant Day
+        isn’t really a photo competition, it’s more a homage to good old
+        analogue, instant photography - everybody who participates are
+        winners:-) But: We do have a nice prize for one lucky instant
+        photographer!</Text
+      >
+    </div>
+    <Image
+      src="/images/illustration-section.svg"
+      alt="Form illustration"
+      width="500"
+      height="500"
+      class="absolute -top-45 -ml-50 hidden md:block"
+    />
+    <Image
+      src="/images/polaroid-4.svg"
+      alt="Form illustration"
+      width="300"
+      height="300"
+      class="md:hidden mx-auto"
+    />
+  </section>
+  <section class="relative z-10 mt-20 md:mt-60 md:grid grid-cols-[1fr_2fr_1fr] gap-10">
+    <Image
+      src="/images/Why-section-1.svg"
+      alt="Form illustration"
+      width="400"
+      height="400"
+      class="-mt-40 -ml-20 hidden md:block"
+    />
+    <div class="items-center mx-10">
+      <Text teksttype="h1" stylingclasses="mb-6">WHY INSTANT PHOTOGRAPHY?</Text>
+      <Text teksttype="brødtekst" stylingclasses="mb-6"
+        >Instant photography began in the 1940s, when Edwin Land invented it
+        after his daughter asked to see photos right away. Polaroid became a
+        cultural icon, booming in the 70s and 80s before nearly vanishing in the
+        digital age. Today, as people seek analogue, offline experiences,
+        instant photography is making a comeback—offering a tactile,
+        life-affirming way to capture memories. Let’s celebrate life and keep
+        making them.</Text
+      >
+    </div>
+    <Image
+      src="/images/Why-section-2.svg"
+      alt="Form illustration"
+      width="400"
+      height="400"
+      class="md:-mt-20 md:-mr-50 mb-5"
+    />
+  </section>
+  <section class="mx-10 md:mx-50">
+    <Text teksttype="h1" stylingclasses="mb-6">HOW TO PARTICIPATE</Text>
+    <Text teksttype="brødtekst" stylingclasses="mb-6"
+      >So, got an instant photo ready for the public? In order to take part in
+      Instant Day:
+    </Text>
+    <Steps />
+  </section>
   <section class="home-former-gallery mt-20 bg-[#2F2F2F]">
-    <div>
-      <div>
-        <h1
-          class="H2-medium place-self-center pt-10 text-white max-xl:text-4xl xl:text-5xl"
-        >
-          Former participants has uploaded
-        </h1>
-      </div>
-    </div>
-
+    <Text
+      teksttype="h1"
+      stylingclasses="pt-8 text-center color-primary-offwhite"
+      >Former participant has uploaded</Text
+    >
     <div class="p-15">
-      <div class="flex flex-col gap-5 border border-white">
+      <div class="border-primary-offwhite flex flex-col gap-5 border">
         <div
           class="flex flex-col gap-10 place-self-center p-15 xl:grid xl:grid-cols-3"
         >
@@ -176,83 +162,109 @@ import Text from "../components/Text.astro";
       </div>
     </div>
   </section>
-  <section class="home-inspiration">
-    <div class="mt-20 flex flex-col gap-35 max-xl:p-5 xl:p-15">
-      <div
-        class="h-fit w-80 w-full content-center place-self-center rounded-4xl bg-[#ab5534] p-5 xl:h-80"
-      >
-        <h1
-          class="justify-start place-self-center text-center leading-[-1] text-[#fffdf9] max-xl:w-50 max-xl:text-4xl xl:w-[852px] xl:text-5xl"
+  <section class="home-inspiration mx-10 md:mx-50 mb-40">
+    <Text
+      teksttype="h2_light"
+      stylingclasses="mb-6 text-center bg-primary-red color-primary-offwhite mt-20 py-10 rounded-4xl"
+      >You can also get a lot of inspiration from the art Photography scene.</Text
+    >
+    <!-- Dan Isaac Wallin -->
+    <div class="md:mx-25 mt-30 md:grid grid-cols-2">
+      <Image
+        src="/images/photos/10137611445_c8646f637b_b 1.png"
+        alt="Picture of Dan Isaac Wallin"
+        width="350"
+        height="350"
+        class="mx-auto mb-5"
+      />
+      <div class="items-end">
+        <Text teksttype="brødtekst" stylingclasses="mb-6"
+          >Dan Isaac Wallin is a swedish art photographer, who uses large format
+          and vintage polaroid cameras for his work. His work hangs in numerous
+          houses as posters.</Text
         >
-          You can also get a lot of inspiration from the art Photography scene.
-        </h1>
+        <Button
+          ctaText="Click here"
+          ctaLink="https://www.danisaacwallin.com"
+          bgColor="var(--primary-color-yellow)"
+          textColor="var(--primary-color-black)"
+          borderColor="var(--primary-color-yellow)"
+        />
       </div>
-      <div
-        class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row xl:gap-50"
-      >
-        <div class="rounded-[57px] bg-zinc-300">
-          <img src="/images/photos/10137611445_c8646f637b_b 1.png" alt="" />
-        </div>
-        <div>
-          <p
-            class="Underpunkter-light w-[502px] justify-start place-self-center text-3xl"
-          >
-            Dan Isaac Wallin is a swedish art photographer, who uses large
-            format and vintage polaroid cameras for his work. His work hangs in
-            numerous houses as posters.
-          </p>
-        </div>
+    </div>
+    <!-- Maripol -->
+    <div class="md:mx-25 mt-30 md:grid grid-cols-2">
+      <Image
+        src="/images/maripol.svg"
+        alt="Picture of Dan Isaac Wallin"
+        width="300"
+        height="300"
+        class="mx-auto md:-mt-30 col-start-2 mb-5"
+      />
+      <div class="items-end row-start-1">
+        <Text teksttype="brødtekst" stylingclasses="mb-6"
+          >Maripol is a french artist/photographer/film producer. Her claim to
+          fame was in the 1980’s, where she photographed famous people with a
+          Polaroid SX-70. Her photographs are still very influential in the
+          fashion industry.</Text
+        >
+        <Button
+          ctaText="Click here"
+          ctaLink="https://en.wikipedia.org/wiki/Maripol"
+          bgColor="var(--primary-color-yellow)"
+          textColor="var(--primary-color-black)"
+          borderColor="var(--primary-color-yellow)"
+        />
       </div>
-      <div
-        class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row-reverse xl:gap-50"
-      >
-        <div class="place-self-center rounded-[57px] bg-zinc-300">
-          <img src="images/photos/Mpol-Moshe-Brakha_large 1.png" alt="" />
-        </div>
-        <div>
-          <p class="Underpunkter-light w-[502px] justify-start text-3xl">
-            Maripol is a french artist/photographer/film producer. Her claim to
-            fame was in the 1980’s, where she photographed famous people with a
-            Polaroid SX-70. Her photographs are still very influential in the
-            fashion industry.
-          </p>
-        </div>
+    </div>
+    <!-- Mette Kelter -->
+    <div class="md:mx-25 mt-30 md:grid grid-cols-2">
+      <Image
+        src="/images/mette.svg"
+        alt="Picture of Maripol"
+        width="350"
+        height="350"
+        class="mx-auto md:-mt-20 mb-5"
+      />
+      <div class="items-end">
+        <Text teksttype="brødtekst" stylingclasses="mb-6"
+          >Mette Kelter is a danish art photographer, who often experiments with
+          deliberate destruction of the chemical process in instant photos. One
+          of the key words here is unpredictability in the work process, which
+          leads to interesting and unique artworks.</Text
+        >
+        <Button
+          ctaText="Click here"
+          ctaLink="https://www.kelterphotography.com"
+          bgColor="var(--primary-color-yellow)"
+          textColor="var(--primary-color-black)"
+          borderColor="var(--primary-color-yellow)"
+        />
       </div>
-      <div
-        class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row xl:gap-50"
-      >
-        <div class="rounded-[57px] bg-zinc-300">
-          <img
-            src="images/photos/329790270_3510025345936303_31638848077260639_n 1.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <p class="Underpunkter-light w-[502px] justify-start text-3xl">
-            Mette Kelter is a danish art photographer, who often experiments
-            with deliberate destruction of the chemical process in instant
-            photos. One of the key words here is unpredictability in the work
-            process, which leads to interesting and unique artworks
-          </p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col place-items-center gap-10 place-self-center xl:flex xl:flex-row-reverse xl:gap-50"
-      >
-        <div class="rounded-[57px] bg-zinc-300">
-          <img
-            src="images/photos/ecccb61d9399c57ac81f1e570c74b0ad.png 1.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <p class="Underpunkter-light w-[502px] justify-start text-3xl">
-            The Polaroid Collection, once assembled by the company and featuring
+    </div>
+    <!-- The Polaroid Collection -->
+     <div class="md:mx-25 mt-30 md:grid grid-cols-2">
+      <Image
+        src="/images/the-polariod-selection.webp"
+        alt="Picture of Dan Isaac Wallin"
+        width="300"
+        height="300"
+        class="mx-auto md:-mt-20 mt-10 col-start-2 mb-5"
+      />
+      <div class="items-end row-start-1">
+        <Text teksttype="brødtekst" stylingclasses="mb-6"
+          >The Polaroid Collection, once assembled by the company and featuring
             works by famous photographers, was auctioned off after Polaroid’s
             2008 bankruptcy. Fortunately, books like The Polaroid Book by Steve
-            Crist and Barbara Hitchcock preserve its images.
-          </p>
-        </div>
+            Crist and Barbara Hitchcock preserve its images.</Text
+        >
+        <Button
+          ctaText="Click here"
+          ctaLink="https://www.taschen.com/en/books/photography/40752/the-polaroid-book-45th-ed/"
+          bgColor="var(--primary-color-yellow)"
+          textColor="var(--primary-color-black)"
+          borderColor="var(--primary-color-yellow)"
+        />
       </div>
     </div>
   </section>

@@ -105,6 +105,13 @@
 .bg-primary-offwhite {
   background-color: var(--primary-color-offwhite);
 }
+.bg-primary-red {
+  background-color: var(--primary-color-red);
+}
+
+.border-primary-offwhite {
+  border-color: var(--primary-color-offwhite);
+}
 
 @layer base {
   *,
