@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Text from "../components/Text.astro";
+import Button from "../components/Button.astro";
+---
+
+<Layout>
+  <section>
+    <div class="xl:flex xl:flex-row xl:gap-50 xl:place-self-center">
+      <div>
+        <img
+          class="xl:-mt-20 xl:h-[820px] xl:w-96"
+          src="/images/camera.svg"
+          alt="1"
+        />
+      </div>
+      <div class="xl:mt-20 xl:flex xl:flex-col xl:gap-10 xl:place-self-start">
+        <Text teksttype="h1" stylingclasses="">THANKS!</Text>
+        <div class="xl:flex xl:w-100 xl:flex-col xl:gap-5">
+          <Text teksttype="brødtekst" stylingclasses="justify-start" /> You’re an
+          instant champ! Thanks for the contribution:-)  The competition runs until
+          October 18. Shortly after, we will review all the images, and announce
+          a winner on October 31. 
+          <Text teksttype="brødtekst" stylingclasses="justify-start" /> If you’re
+          one of the lucky winners or nominees, we will contact you by e-mail. Good
+          luck!
+          <Text teksttype="brødtekst" stylingclasses="justify-start" /> NB! Want
+          to make one more submission? Start the submission form over:-)
+        </div>
+        <div>        <Button
+          ctaText="Upload More"
+          ctaLink="/share"
+          bgColor="var(--primary-color-yellow)"
+          textColor="var(--primary-color-black)"
+          borderColor="var(--primary-color-yellow)"
+        /></div>
+      </div>
+    </div>
+  </section>
+</Layout>
