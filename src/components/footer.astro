@@ -1,5 +1,5 @@
 ---
-
+import Text from "../components/Text.astro";
 ---
 
 <footer class="bg-[#303030] py-12 text-white md:pr-60 md:pl-60">
@@ -8,10 +8,10 @@
   >
     <!-- Left side (text) -->
     <div class="flex flex-1 flex-col items-center text-center">
-      <h2 class="mb-4 pb-7 text-4xl font-medium uppercase">Kontakt</h2>
-      <p class="mb-1 pb-4 font-light">1234 Example Street</p>
-      <p class="mb-1 pb-4 font-light">email@example.com</p>
-      <p class="mb-1 font-light">+123 456 789</p>
+      <Text teksttype="Titel" stylingclasses="mb-4 pb-7 text-4xl font-medium uppercase">Kontakt</Text>
+      <Text teksttype="brødtekst" stylingclasses="mb-1 pb-4">Guldbergsgade 29N, 2200 København</Text>
+      <Text teksttype="brødtekst" stylingclasses="mb-1 pb-4">ek@ek.dk</Text>
+      <Text teksttype="brødtekst" stylingclasses="mb-1">+45 46 46 00 00</Text>
     </div>
 
     <!-- Vertical divider (visible only on desktop) -->

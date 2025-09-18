@@ -1,6 +1,8 @@
 ---
 import "../styles/tailwind.css";
 const { title = "Astro Basics" } = Astro.props;
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
 ---
 
 <!doctype html>
@@ -11,15 +13,21 @@ const { title = "Astro Basics" } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro Basics</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
   </head>
-  <body>
-    <slot />
+  <body class="bg-primary-offwhite">
+    <header>
+      <Header />
+    </header>
+
+    
+    <main class="mx-10 md:mx-50">
+      <slot />
+    </main>
+    
+
+    <footer>
+      <Footer />
+    </footer>
   </body>
 </html>
 
