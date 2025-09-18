@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Text from "../components/Text.astro";
+---
+
+<Layout>
+  <section>
+    <div class="xl:flex xl:flex-row xl:gap-50 xl:place-self-center">
+      <div>
+        <img class="xl:h-[1020px] xl:w-96" src="/images/camera.svg" alt="1" />
+      </div>
+      <div class="xl:gap-10 xl:flex xl:flex-col xl:place-self-start xl:mt-50">
+        <Text teksttype="h1" stylingclasses="">Thanks!</Text>
+        <div class="xl:w-100 xl:flex xl:flex-col xl:gap-5">
+          <Text
+            teksttype="brødtekst"
+            stylingclasses="justify-start"
+          /> You’re an instant champ! Thanks for the contribution:-)  The competition
+          runs until October 18. Shortly after, we will review all the images, and
+          announce a winner on October 31. 
+          <Text
+            teksttype="brødtekst"
+            stylingclasses="justify-start"
+          /> If you’re one of the lucky winners or nominees, we will contact you
+          by e-mail. Good luck!
+          <Text
+            teksttype="brødtekst"
+            stylingclasses="justify-start"
+          /> NB! Want to make one more submission? Start the submission form over:-)
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
