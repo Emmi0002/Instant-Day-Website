@@ -2,15 +2,121 @@
 import Text from "../components/Text.astro";
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/footer.astro";
-import Steps from "../components/steps.astro";
+import { Image } from "astro:assets";
 ---
 
 <Layout>
-  <Text teksttype="Titel" stylingclasses="justify-self-end text_white mr-10"
-    >INSTAGRAM</Text
-  >
+  <section class="m-auto grid grid-cols-2 items-center gap-5 mx-10 md:mx-50">
+    <div>
+      <Text teksttype="h1" stylingclasses="mb-10">WINNERS & NOMINEES</Text>
+      <Text teksttype="brødtekst" stylingclasses=""
+        >Instant Day was quite a success with more than [ANTAL] contributions.
+        So it was difficult to find a winner. After a couple of long but
+        exciting days, the judges agreed on the winner and the [ANTAL NOMINEES]
+        nominees.</Text
+      >
+    </div>
+    <Image
+      src="/images/trophy.svg"
+      alt="Form illustration"
+      width="250"
+      height="250"
+      class="mx-auto"
+    />
+  </section>
+  <section class="bg-primary-black mt-25 mb-25 grid grid-cols-2 p-15">
+    <div>
+      <Text teksttype="winner" stylingclasses="color-primary-offwhite mb-5"
+        >WINNER</Text
+      >
+      <Text teksttype="h2_medium" stylingclasses="color-primary-offwhite mb-3"
+        >Amager Fælled</Text
+      >
+      <Text teksttype="h2_light" stylingclasses="color-primary-offwhite mb-5"
+        >Stefan Grage</Text
+      >
+      <Text teksttype="brødtekst" stylingclasses="color-primary-offwhite"
+        >Submitter: Stefan Grage <br /> A little snap from Amager Fælled, a large
+        common in the southwestern part of Copenhagen, Denmark. Taken with a Lomomatic
+        Square.</Text
+      >
+    </div>
+    <Image
+      src="/images/01-amager-faelled-instaxsquare01.jpg"
+      alt="Form illustration"
+      width="250"
+      height="250"
+      class="mx-auto"
+    />
+  </section>
 
-  <p class="Titel">Hello world</p>
-
-  <Footer />
+  <section class="mb-10 mx-10 md:mx-50">
+    <div class="mx-auto border-t-2 border-b-2">
+      <Text teksttype="h1" stylingclasses="text-center py-5"
+        >BEST OF 2025 NOMINEES</Text
+      >
+    </div>
+    <article class="mt-30 grid grid-cols-[auto_1fr] gap-5 items-end">
+      <Image
+        src="/images/01-amager-faelled-instaxsquare01.jpg"
+        alt="Form illustration"
+        width="250"
+        height="250"
+        class="col-start-1 row-start-1"
+      />
+      <Text teksttype="winner" stylingclasses="color-primary-yellow col-start-1 row-start-1 self-end"
+          >01</Text
+        >
+      <div>
+        <Text teksttype="h2_medium" stylingclasses="color-primary-black mb-3"
+          >Amager Fælled</Text
+        >
+        <Text teksttype="brødtekst" stylingclasses="color-primary-black"
+          >Submitter: Stefan Grage <br /> A little snap from Amager Fælled, a large
+          common in the southwestern part of Copenhagen, Denmark. Taken with a Lomomatic
+          Square.</Text
+        >
+      </div>
+    </article>
+    <article class="mt-30 grid grid-cols-[1fr_auto] gap-5 items-end justify-items-end">
+      <div class="text-right">
+        <Text teksttype="h2_medium" stylingclasses="color-primary-black mb-3"
+        >Amager Forbrænding</Text
+        >
+        <Text teksttype="brødtekst" stylingclasses="color-primary-black"
+        >Submitter: Stefan Grage <br /> Description/story: I’d give my right arm for a cigarette. Taken with a Lomomatic Square.</Text
+        >
+      </div>
+      <Image
+        src="/images/02-amager-forbraending-instaxsquare-01.jpg"
+        alt="Form illustration"
+        width="250"
+        height="250"
+        class="col-start-2 row-start-1"
+      />
+      <Text teksttype="winner" stylingclasses="color-primary-yellow col-start-2 row-start-1 self-end"
+          >02</Text
+        >
+    </article>
+    <article class="mt-30 mb-40 grid grid-cols-[auto_1fr] gap-5 items-end">
+      <Image
+        src="/images/03-amager-strand.jpg"
+        alt="Form illustration"
+        width="250"
+        height="250"
+        class="col-start-1 row-start-1"
+      />
+      <Text teksttype="winner" stylingclasses="color-primary-yellow col-start-1 row-start-1 self-end"
+          >03</Text
+        >
+      <div>
+        <Text teksttype="h2_medium" stylingclasses="color-primary-black mb-3"
+          >Amager Strand</Text
+        >
+        <Text teksttype="brødtekst" stylingclasses="color-primary-black"
+          >Submitter: Stefan Grage <br /> Description/story: From this angle, copenhagen looks like a big city. Taken with a Polaroid Now+ gen 2, with a yellow tint filter.</Text
+        >
+      </div>
+    </article>
+  </section>
 </Layout>
